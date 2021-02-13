@@ -1,3 +1,5 @@
+// 백준 2752번 세 수 정렬
+
 #include <iostream>
 
 using namespace std;
@@ -91,7 +93,7 @@ int main()
 */
 
 /*
-//  이용
+//  sort 이용
 #include <iostream>
 #include <algorithm>
 #include <vector>
@@ -106,7 +108,7 @@ int main()
         cin >> arr[i];
     }
     
-    sort(arr, arr + 3);   
+    sort(arr, arr + 3);     // 오름차순 기본 (1 2 3 4 5 ... )   
 /////////////////////////////////////////////////
    start                      end
     ㅣ . . . ㅣ . . . ㅣ . . . ㅣ 

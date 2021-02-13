@@ -66,7 +66,6 @@ int main()
 /*
 // SWAP 이용
 #include <iostream>
-
 using namespace std;
 
 int main()
@@ -95,7 +94,7 @@ int main()
 /*
 //  sort 이용
 #include <iostream>
-#include <algorithm>
+#include <algorithm>    // sort 함수
 #include <vector>
 
 using namespace std;

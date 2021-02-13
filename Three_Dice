@@ -1,0 +1,48 @@
+// 2480번 주사위 세개
+
+#include <iostream>
+#include <algorithm>  // sort 함수
+
+using namespace std;
+
+int main()
+{
+    const int N = 3;
+    int dice[N];    // sort 정렬 위해 배열 사용
+    // int dice_1, dice_2, dice_3; 
+    int price;
+    
+    for(int i = 0; i < N; i++)
+    {
+        cin >> dice[i];
+    }
+    
+    if( dice[0] == dice[1])
+    {
+        if( dice[0] == dice[2] )
+        {
+            price = 10000 + dice[0] * 1000;
+        }
+        else
+        {
+            price = 1000 + dice[0] * 100;
+        }
+    }
+    else if( dice[1] == dice[2] )
+    {
+        price = 1000 + dice[1] * 100;
+    }
+    else if( dice[0] == dice[2] )
+    {
+        price = 1000 + dice[0] * 100;
+    }
+    else
+    {
+        sort(dice, dice + 3); // 오름차순 정렬
+        price = dice[2] * 100;
+    }
+    
+    cout << price;
+    
+    return 0;
+}

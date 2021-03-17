@@ -1,0 +1,8 @@
+
+https://technote.kr/352
+
+확장프로그램 GitLens GitHistory
+
+[Git Bash]
+git config --global user.name "Developer-DK"
+git config --global user.email "dongkyu.dev@gmail.com"
